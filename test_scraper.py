@@ -38,6 +38,7 @@ class TestWebScraper:
         scraper = WebScraper("http://test.com")
         html = scraper.fetch_page()
         
+        
         assert html is None
     
     @patch('scraper.requests.get')
